@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Metadados essenciais para o funcionamento correto do site e codificação de caracteres -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Felipe Loureiro Advocacia - Defesa intransigente dos direitos trabalhistas e assessoria previdenciária com rigor, ética e exclusividade. Fale conosco.">
+    <title>Felipe Loureiro | Advocacia Especializada</title>
+
+    <!-- Google Fonts: Importando as fontes Playfair Display (títulos de luxo) e Montserrat (corpo do texto legível) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Folha de estilo externa (na pasta CSS) -->
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER FIXO
+         ========================================== -->
+    <!-- O cabeçalho permanece fixado no topo, oferecendo navegação fluida e efeito de desfoque luxuoso -->
+    <header class="main-header">
+        <div class="header-container">
+            <!-- Logotipo em texto estilizado, reforçando a assinatura pessoal -->
+            <a href="#" class="logo">
+                <span class="logo-name">FELIPE LOUREIRO</span>
+                <span class="logo-sub">ADVOCACIA</span>
+            </a>
+
+            <!-- Menu de navegação desktop -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre nós</a></li>
+                    <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão de ação direta para o WhatsApp -->
+            <div class="header-cta">
+                <a href="https://wa.me/5527998250606" class="btn-header" target="_blank" rel="noopener noreferrer">
+                    <span>Agendar Consulta</span>
+                </a>
+            </div>
+
+            <!-- Botão Hamburguer para navegação responsiva no mobile -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu de navegação">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==========================================
+         HERO SECTION (SEÇÃO PRINCIPAL)
+         ========================================== -->
+    <!-- Seção de abertura com alto impacto visual, imagem corporativa e chamada focada no direito trabalhista -->
+    <section class="hero-section" id="hero">
+        <!-- Overlay escuro para garantir leitura do texto e efeito sofisticado de luz -->
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">
+            <span class="hero-subtitle fade-in">ADVOGADO TRABALHISTA & PREVIDENCIÁRIO</span>
+            <h1 class="hero-title fade-in">
+                Garantindo seus direitos com <strong>rigor, dedicação</strong> e <strong>exclusividade</strong>.
+            </h1>
+            <p class="hero-lead fade-in">
+                Atuação estratégica focada na defesa intransigente do trabalhador e na garantia de benefícios previdenciários justos.
+            </p>
+            <div class="hero-actions fade-in">
+                <!-- Botão primário direcionado ao WhatsApp corporativo -->
+                <a href="https://wa.me/5527998250606" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                    <span>Falar com Especialista</span>
+                    <svg class="btn-arrow" viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <!-- Botão secundário âncora para a seção de serviços -->
+                <a href="#servicos" class="btn btn-secondary">Conhecer Serviços</a>
+            </div>
+        </div>
+        <!-- Indicador visual sutil de rolagem no final da tela -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="scroll-text">Role para explorar</span>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SERVIÇOS
+         ========================================== -->
+    <!-- Apresentação dos serviços trabalhistas principais e a seção bônus previdenciária -->
+    <section class="services-section section-padding light-section" id="servicos">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Áreas de Atuação</span>
+                <h2 class="section-title">Nossos Serviços Especializados</h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle">
+                    Soluções jurídicas sob medida para reestabelecer o equilíbrio e a justiça nas relações laborais.
+                </p>
+            </div>
+
+            <!-- Grid de serviços trabalhistas principais -->
+            <div class="services-grid">
+                <!-- Card 1: Rescisão Indireta -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                            <polyline points="17 21 17 13 7 13 7 21"/>
+                            <polyline points="7 3 7 8 15 8"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Rescisão Indireta</h3>
+                    <p class="service-card-text">
+                        A "justa causa" cometida pelo empregador. Saiba como rescindir o contrato mantendo todos os seus direitos a verbas rescisórias quando a empresa descumpre a lei.
+                    </p>
+                </div>
+
+                <!-- Card 2: Horas Extras -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Horas Extras e Intervalos</h3>
+                    <p class="service-card-text">
+                        Cobrança de horas trabalhadas além da jornada legal, intervalos para refeição e descanso suprimidos ou remunerados de forma incorreta pela empresa.
+                    </p>
+                </div>
+
+                <!-- Card 3: Acidente de Trabalho -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Acidente e Doença Ocupacional</h3>
+                    <p class="service-card-text">
+                        Indenizações por danos materiais, morais e estéticos decorrentes de acidentes laborais ou doenças desenvolvidas por conta do ambiente de trabalho inadequado.
+                    </p>
+                </div>
+
+                <!-- Card 4: Desvio de Função -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="8.5" cy="7" r="4"/>
+                            <polyline points="17 11 19 13 23 9"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Desvio e Equiparação</h3>
+                    <p class="service-card-text">
+                        Regularização salarial quando o trabalhador exerce funções diferentes da contratada ou recebe remuneração inferior a colegas que desempenham a mesma atividade.
+                    </p>
+                </div>
+
+                <!-- Card 5: Assédio Moral e Sexual -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                            <line x1="12" y1="9" x2="12" y2="13"/>
+                            <line x1="12" y1="17" x2="12.01" y2="17"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Assédio e Danos Morais</h3>
+                    <p class="service-card-text">
+                        Ações voltadas para combater e punir humilhações, perseguições constantes no ambiente de trabalho ou investidas que violem a integridade física e emocional.
+                    </p>
+                </div>
+
+                <!-- Card 6: Justa Causa -->
+                <div class="service-card reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 9.9-1"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-card-title">Reversão de Justa Causa</h3>
+                    <p class="service-card-text">
+                        Defesa jurídica para reverter demissões por justa causa aplicadas de forma abusiva, desproporcional ou injustificada pela empresa, recuperando as verbas devidas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bloco Bônus: Atuação Previdenciária -->
+            <!-- O Direito Previdenciário é apresentado de forma elegante, atuando como um valor agregado (bônus) -->
+            <div class="previdenciario-bonus-box reveal">
+                <div class="bonus-content">
+                    <div class="bonus-tag">Destaque Exclusivo</div>
+                    <h3 class="bonus-title">Soluções Previdenciárias Completas</h3>
+                    <p class="bonus-text">
+                        Além da sólida atuação trabalhista, oferecemos consultoria estratégica e representação para a obtenção de benefícios no INSS. Planejamento previdenciário personalizado, concessão e revisão de aposentadorias, auxílio-doença, BPC/LOAS e pensão por morte para assegurar sua tranquilidade financeira no futuro.
+                    </p>
+                    <a href="https://wa.me/5527998250606" class="btn-bonus" target="_blank" rel="noopener noreferrer">
+                        Consultar Direito Previdenciário
+                        <svg viewBox="0 0 24 24" width="16" height="16">
+                            <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="bonus-icon-bg">
+                    <svg viewBox="0 0 24 24" width="150" height="150" fill="none" stroke="currentColor" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         SOBRE NÓS
+         ========================================== -->
+    <!-- Seção institucional apresentando a biografia/perfil corporativo e utilizando a imagem do cliente -->
+    <section class="about-section section-padding alternate-bg" id="sobre">
+        <div class="container">
+            <div class="about-grid">
+                <!-- Coluna de Texto: Informações de autoridade e atuação -->
+                <div class="about-text-col reveal">
+                    <span class="section-tag">Sobre o Fundador</span>
+                    <h2 class="section-title text-left">Felipe Loureiro</h2>
+                    <span class="about-subtitle">Advocacia de Precisão e Alta Performance</span>
+                    <div class="gold-divider text-left"></div>
+                    
+                    <p class="about-paragraph">
+                        Com sólida trajetória e profunda dedicação ao estudo das ciências jurídicas, o Dr. Felipe Loureiro construiu sua atuação profissional alicerçada nos princípios da ética, do rigor técnico e da defesa intransigente dos direitos dos trabalhadores. Compreendendo que as relações de trabalho moldam a dignidade humana, seu escritório se dedica a prover soluções que aliam agilidade, transparência e alta precisão jurídica.
+                    </p>
+                    <p class="about-paragraph">
+                        Nosso escritório adota uma abordagem moderna e totalmente personalizada. Cada cliente é atendido de forma individualizada, permitindo uma análise minuciosa de suas necessidades para desenhar as melhores teses tanto no Direito Trabalhista quanto na assessoria complementar de benefícios Previdenciários.
+                    </p>
+                    
+                    <!-- Assinatura corporativa elegante -->
+                    <div class="about-signature">
+                        <div class="signature-text">
+                            <strong>Dr. Felipe Loureiro</strong>
+                            <span>Advogado Fundador - OAB/ES</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna de Imagem: Foto com moldura dourada e sobreposição luxuosa -->
+                <div class="about-image-col reveal">
+                    <div class="image-wrapper">
+                        <!-- Imagem Corporativa local do cliente -->
+                        <img src="Image/Sobre.png" alt="Dr. Felipe Loureiro" class="about-img">
+                        <!-- Moldura dourada flutuante para sensação de luxo refinado -->
+                        <div class="gold-frame"></div>
+                        <!-- Caixa com dados rápidos de destaque -->
+                        <div class="experience-badge">
+                            <span class="badge-number">100%</span>
+                            <span class="badge-text">Foco na Defesa dos Trabalhadores</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         DIFERENCIAIS
+         ========================================== -->
+    <!-- Apresentação dos pilares que destacam o escritório no mercado jurídico -->
+    <section class="differentials-section section-padding light-section" id="diferenciais">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-tag">Por Que Nos Escolher</span>
+                <h2 class="section-title">Diferenciais Premium</h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle">
+                    Nosso compromisso com a excelência molda cada aspect de nossa relação com o cliente.
+                </p>
+            </div>
+
+            <!-- Grade de diferenciais com cards sofisticados -->
+            <div class="differentials-grid">
+                <!-- Diferencial 1 -->
+                <div class="diff-card reveal">
+                    <div class="diff-number">01</div>
+                    <h3 class="diff-title">Atendimento Humanizado & Exclusivo</h3>
+                    <p class="diff-text">
+                        Tratamos seu caso de forma única. Você terá comunicação direta com o advogado encarregado do seu processo, garantindo segurança e tranquilidade em todas as etapas.
+                    </p>
+                </div>
+
+                <!-- Diferencial 2 -->
+                <div class="diff-card reveal">
+                    <div class="diff-number">02</div>
+                    <h3 class="diff-title">Análise Estratégica Completa</h3>
+                    <p class="diff-text">
+                        Avaliamos detidamente toda a documentação, calculamos as verbas devidas com exatidão matemática e apresentamos um parecer realista sobre as reais chances da sua ação.
+                    </p>
+                </div>
+
+                <!-- Diferencial 3 -->
+                <div class="diff-card reveal">
+                    <div class="diff-number">03</div>
+                    <h3 class="diff-title">Agilidade e Foco em Resultados</h3>
+                    <p class="diff-text">
+                        Utilizamos tecnologias processuais avançadas para acelerar o andamento dos processos e buscar acordos satisfatórios ou julgamentos céleres que devolvam seu dinheiro o quanto antes.
+                    </p>
+                </div>
+
+                <!-- Diferencial 4 -->
+                <div class="diff-card reveal">
+                    <div class="diff-number">04</div>
+                    <h3 class="diff-title">Acompanhamento Digital Integrado</h3>
+                    <p class="diff-text">
+                        Relatórios constantes de atualização sobre o andamento processual diretamente em seus canais de preferência, mantendo você sempre por dentro do andamento da sua causa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         CTA WHATSAPP
+         ========================================== -->
+    <!-- Seção de convite à ação de alta conversão, convidando o usuário a falar com o advogado imediatamente -->
+    <section class="cta-section section-padding alternate-bg" id="contato">
+        <!-- Overlay sutil de elegância geométrica -->
+        <div class="cta-pattern"></div>
+        <div class="container text-center reveal">
+            <h2 class="cta-title">Agende Uma Análise Estratégica do Seu Caso</h2>
+            <p class="cta-text">
+                Fale diretamente com quem entende e garanta a defesa de seus direitos hoje mesmo. O atendimento inicial é prático, seguro e sem compromisso.
+            </p>
+            <div class="cta-buttons">
+                <!-- Botão dourado proeminente de WhatsApp -->
+                <a href="https://wa.me/5527998250606" class="btn btn-primary btn-large" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" width="24" height="24" class="icon-whatsapp">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" fill="currentColor"/>
+                    </svg>
+                    <span>Iniciar Conversa no WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         FOOTER (RODAPÉ)
+         ========================================== -->
+    <!-- Rodapé contendo todas as informações oficiais exigidas e links institucionais -->
+    <footer class="main-footer">
+        <div class="footer-top container">
+            <!-- Coluna 1: Logo e descrição curta -->
+            <div class="footer-col brand-col">
+                <a href="#" class="footer-logo">
+                    <span class="logo-name">FELIPE LOUREIRO</span>
+                    <span class="logo-sub">ADVOCACIA</span>
+                </a>
+                <p class="footer-brand-text">
+                    Defesa contundente do trabalhador com alto rigor técnico e transparência inabalável.
+                </p>
+                <!-- Links para redes sociais -->
+                <div class="social-links">
+                    <a href="https://instagram.com/felipeloureiroadv" class="social-btn" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@felipeloureiroadv</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna 2: Links Úteis rápidos -->
+            <div class="footer-col links-col">
+                <h4 class="footer-col-title">Navegação</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#servicos">Nossos Serviços</a></li>
+                    <li><a href="#sobre">Sobre o Advogado</a></li>
+                    <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <!-- Coluna 3: Informações de Contato Fixas -->
+            <!-- Todos os dados informados foram fielmente replicados aqui -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-col-title">Contato Oficial</h4>
+                <ul class="footer-contact-info">
+                    <!-- Endereço Oficial -->
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Av. Beira Mar, 1360, lj 4 e 5, Ed. Sea Tower, Praia do Morro, Guarapari - ES, 29216-010</span>
+                    </li>
+                    <!-- WhatsApp -->
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <a href="https://wa.me/5527998250606" target="_blank" rel="noopener noreferrer">(27) 99825-0606</a>
+                    </li>
+                    <!-- E-mail -->
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <a href="mailto:felipeloureiroadv@hotmail.com">felipeloureiroadv@hotmail.com</a>
+                    </li>
+                    <!-- Horário de Atendimento -->
+                    <li>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Segunda a Sexta: 08:00h às 18:00h</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Rodapé inferior com copyrights e termos -->
+        <div class="footer-bottom container">
+            <p>&copy; 2026 Felipe Loureiro Advocacia. Todos os direitos reservados. Termos de Uso e Políticas de Privacidade.</p>
+            <p class="developer-credit">Desenvolvido com sofisticação</p>
+        </div>
+    </footer>
+
+    <!-- ==========================================
+         BOTÃO WHATSAPP FLUTUANTE COM MINI BALÃO E MÁSCARA CIRCULAR
+         ========================================== -->
+    <!-- Botão de WhatsApp fixo que flutua no canto da tela, otimizado para mobile e desktop -->
+    <div class="whatsapp-floating-container" id="whatsappFloating">
+        <!-- Balão de mensagem (tooltip) que aparece no hover, contendo foto do perfil em máscara de círculo -->
+        <div class="whatsapp-tooltip" id="whatsappTooltip">
+            <div class="whatsapp-profile-img">
+                <!-- Imagem de perfil do whatsapp (usando imagem corporativa reduzida) -->
+                <img src="Image/Sobre.png" alt="Felipe Loureiro">
+                <!-- Indicador de status online verde -->
+                <span class="status-dot"></span>
+            </div>
+            <div class="whatsapp-tooltip-text">
+                <span class="whatsapp-profile-name">Felipe Loureiro</span>
+                <span class="whatsapp-profile-status">Online agora</span>
+                <p class="whatsapp-message">Olá! Como posso ajudar você hoje?</p>
+            </div>
+            <!-- Seta do balão apontando para o ícone -->
+            <div class="tooltip-arrow"></div>
+        </div>
+
+        <!-- Ícone do WhatsApp principal com efeito de pulso -->
+        <a href="https://wa.me/5527998250606" class="whatsapp-btn-pulse" target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="white">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.458 5.704 1.459h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Script de lógica interativa (na pasta JS) -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
