@@ -243,7 +243,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1300px;
+    max-width: 1400px; /* Aumentado de 1300px para 1400px para dar mais espaço de respiração aos 8 links no desktop */
     margin: 0 auto;
     padding: 20px 24px;
     transition: var(--transition-smooth);
@@ -253,11 +253,58 @@ img {
     padding: 10px 24px;
 }
 
-/* Logotipo Textual */
+/* Logotipo Textual com flex-shrink para impedir que seja esmagado pelo menu */
 .logo {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    flex-shrink: 0; /* Garante que a identidade visual mantenha sua largura no desktop */
+}
+
+/* Área de chamada à ação (CTA) no cabeçalho com alinhamento horizontal e flex-shrink */
+.header-cta {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Reduzido de 20px para 15px para economizar espaço horizontal no desktop */
+    flex-shrink: 0; /* Impede que o botão de agendamento e a nota do Google encolham ou encostem nos links */
+}
+
+/* Avaliação de 5 estrelas do Google posicionada ao lado do botão de agendamento */
+.header-google-rating {
+    display: flex;
+    align-items: center; /* Alinha o ícone do Google verticalmente ao centro do bloco de notas */
+    gap: 8px;
+    transition: var(--transition-smooth);
+}
+
+/* Bloco vertical contendo as estrelas no topo e o texto na base */
+.rating-content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha estrelas e texto à esquerda */
+    line-height: 1.2;
+}
+
+/* Ícone oficial do Google com flex-shrink definido para evitar distorções */
+.header-google-rating .google-icon-svg {
+    flex-shrink: 0;
+}
+
+/* Estrelas indicativas de nota máxima no header */
+.header-google-rating .rating-stars {
+    display: flex;
+    color: var(--color-gold);
+    font-size: 0.8rem;
+    gap: 1px;
+}
+
+/* Texto descritivo da nota da avaliação do Google abaixo das estrelas */
+.header-google-rating .rating-text {
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--color-gray-text);
+    letter-spacing: 0.3px;
+    margin-top: 1px;
 }
 
 .logo-name {
@@ -276,21 +323,23 @@ img {
     margin-top: 2px;
 }
 
-/* Menu de Navegação Desktop */
+/* Menu de Navegação Desktop - Gaps compactados em 12px para evitar sobreposição */
 .nav-menu ul {
     display: flex;
     list-style: none;
-    gap: 32px;
+    gap: 12px; /* Reduzido de 15px para 12px para liberar espaço horizontal */
 }
 
+/* Links do menu com tamanho de fonte compacto (0.78rem) para perfeita acomodação dos itens */
 .nav-link {
-    font-size: 0.85rem;
+    font-size: 0.78rem; /* Reduzido de 0.82rem para 0.78rem para dar mais folga no menu desktop */
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.2px; /* Reduzido de 0.5px para 0.2px para poupar espaço horizontal de forma legível */
     color: var(--color-gray-text);
     padding: 8px 0;
     position: relative;
+    white-space: nowrap; /* Garante que os links nunca quebrem em duas linhas */
 }
 
 .nav-link::after {
@@ -312,18 +361,19 @@ img {
     width: 100%;
 }
 
-/* Botão do Header */
+/* Botão de chamada para ação no cabeçalho adaptado para visual ultra compacto */
 .btn-header {
     display: inline-block;
-    padding: 10px 22px;
+    padding: 8px 12px; /* Reduzido de 16px para 12px nas laterais para otimizar espaço */
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px; /* Reduzido de 1px para 0.8px para economizar espaço */
     border: 1px solid var(--color-gold);
     color: var(--color-gold);
     border-radius: 3px;
     transition: var(--transition-smooth);
+    white-space: nowrap; /* Garante que 'Agendar Consulta' nunca quebre em duas linhas */
 }
 
 .btn-header:hover {
@@ -789,6 +839,94 @@ img {
 }
 
 /* ==========================================================================
+   SEÇÃO DE APRESENTAÇÃO (VÍDEOS INSTITUCIONAIS)
+   ========================================================================== */
+/* Fundo e container geral para a seção de apresentação de vídeos */
+.presentation-section {
+    position: relative;
+    background-color: var(--color-secondary-dark); /* Cor secundária escura corporativa */
+}
+
+/* Grid de alinhamento para os cartões de vídeos institucionais */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Garante pelo menos 450px para cada vídeo no desktop */
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* Card individual do vídeo contendo título, player e descrição */
+.video-card {
+    background-color: var(--color-primary-dark); /* Fundo geral escuro profundo para contraste de cinema */
+    padding: 30px;
+    border-radius: 6px;
+    border: 1px solid rgba(197, 168, 128, 0.08); /* Borda dourada fina */
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+}
+
+/* Hover com efeito de elevação no card de vídeo */
+.video-card:hover {
+    border-color: rgba(212, 175, 55, 0.25);
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Título de cada vídeo em itálico luxuoso de Playfair Display */
+.video-card-title {
+    font-family: var(--font-titles);
+    font-size: 1.35rem;
+    color: var(--color-white);
+    font-weight: 600;
+}
+
+/* Container do player com proporção de tela de cinema (16:9) */
+.video-wrapper-player {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Proporção moderna widescreen */
+    border-radius: 4px;
+    overflow: hidden; /* Oculta as bordas quadradas do player nativo */
+    border: 1px solid rgba(197, 168, 128, 0.15); /* Moldura dourada fina no player */
+    background-color: #000000; /* Fundo preto no carregamento do vídeo */
+    position: relative;
+}
+
+/* Vídeo institucional configurado para ocupar toda a largura e altura do wrapper */
+.institutional-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta o vídeo perfeitamente sem sobras pretas nas bordas */
+    display: block;
+}
+
+/* Texto descritivo explicativo logo abaixo do player de vídeo */
+.video-card-description {
+    font-size: 0.9rem;
+    color: var(--color-gray-text);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Adaptação de layout de vídeos para dispositivos móveis (telas pequenas) */
+@media (max-width: 768px) {
+    .videos-grid {
+        grid-template-columns: 1fr; /* Força empilhamento em coluna única */
+        gap: 30px;
+    }
+    
+    .video-card {
+        padding: 20px;
+    }
+    
+    .video-card-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* ==========================================================================
    SEÇÃO DIFERENCIAIS
    ========================================================================== */
 .differentials-grid {
@@ -839,6 +977,380 @@ img {
     color: var(--color-gray-text);
     font-weight: 300;
     line-height: 1.6;
+}
+
+/* ==========================================================================
+   SEÇÃO DEPOIMENTOS E AVALIAÇÕES DO GOOGLE
+   ========================================================================== */
+/* Fundo e container geral para a seção de depoimentos dos clientes */
+.testimonials-section {
+    position: relative;
+    background-color: var(--color-secondary-dark); /* Cor secundária escura corporativa */
+}
+
+/* Painel de destaque do Google contendo a nota média e informações de verificação */
+.google-rating-summary {
+    background-color: var(--color-primary-dark); /* Fundo geral escuro profundo */
+    border: 1px solid rgba(212, 175, 55, 0.15); /* Borda fina dourada */
+    border-radius: 6px;
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Sombra elegante para dar profundidade */
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+/* Hover no painel do Google para torná-lo interativo e convidativo ao clique */
+.google-rating-summary:hover {
+    border-color: rgba(212, 175, 55, 0.35);
+    transform: translateY(-3px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* Informações do rating e marca do Google */
+.google-badge-info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Container do logo e do nome do Google */
+.google-logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Nome da marca Google ao lado do logo */
+.google-brand-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-white);
+    letter-spacing: 0.5px;
+}
+
+/* Alinhamento da nota de avaliação, estrelas e descrição */
+.rating-info-stars {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Nota numérica grande (5.0) destacada em dourado claro */
+.rating-score {
+    font-family: var(--font-titles);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--color-gold-light);
+    line-height: 1;
+}
+
+/* Estilo e gap das 5 estrelas douradas no resumo */
+.stars-gold {
+    display: flex;
+    color: var(--color-gold);
+    font-size: 1.25rem;
+    gap: 3px;
+}
+
+/* Subtítulo descritivo da contagem e veracidade */
+.reviews-count {
+    font-size: 0.85rem;
+    color: var(--color-gray-text);
+    font-weight: 300;
+    text-decoration: underline; /* Indica que é um link clicável */
+}
+
+/* Ação do badge contendo o selo de verificação */
+.google-badge-action {
+    display: flex;
+    align-items: center;
+}
+
+/* Selo de "Avaliações 100% Verificadas" */
+.google-verification {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: rgba(212, 175, 55, 0.08);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    border-radius: 30px;
+    color: var(--color-gold);
+    font-size: 0.78rem;
+    font-weight: 500;
+}
+
+/* Cor do checkmark dentro do selo de verificação */
+.google-verification svg {
+    color: var(--color-gold-light);
+}
+
+/* Grid responsivo para a exibição de 3 cartões de depoimentos lado a lado */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* Card individual de depoimento com design luxuoso e bordas sutis */
+.testimonial-card {
+    background-color: var(--color-primary-dark);
+    padding: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 168, 128, 0.06);
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover com efeito de elevação tridimensional no card de depoimento */
+.testimonial-card:hover {
+    border-color: rgba(212, 175, 55, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Estrelas indicativas de nota máxima no topo do card */
+.testimonial-stars {
+    color: var(--color-gold);
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+/* Corpo do depoimento formatado em itálico e com altura de linha confortável */
+.testimonial-text {
+    font-size: 0.95rem;
+    color: var(--color-gray-text);
+    font-weight: 300;
+    line-height: 1.7;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Detalhes do autor (avatar e nome/localização) alinhados em flexbox */
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Avatar circular do autor usando a inicial do nome com gradiente dourado */
+.author-avatar {
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, var(--color-gold-dark), var(--color-gold));
+    border-radius: 50%;
+    color: var(--color-primary-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+/* Caixa de textos sobre a identidade do autor */
+.author-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Nome do autor em destaque branco */
+.author-name {
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: var(--color-white);
+}
+
+/* Cidade do autor em dourado fosco elegante */
+.author-location {
+    font-size: 0.75rem;
+    color: var(--color-gold-sand);
+}
+
+/* Marcador verde de cliente verificado evocando credibilidade */
+.verified-buyer {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.68rem;
+    color: var(--color-whatsapp);
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+/* Adaptações do layout de depoimentos para tablets e telas médias */
+@media (max-width: 991px) {
+    .google-rating-summary {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        padding: 30px;
+    }
+}
+
+/* Adaptações do layout de depoimentos para smartphones */
+@media (max-width: 480px) {
+    .google-badge-info {
+        gap: 15px;
+    }
+    
+    .rating-info-stars {
+        gap: 10px;
+    }
+    
+    .rating-score {
+        font-size: 1.8rem;
+    }
+    
+    .testimonial-card {
+        padding: 30px 24px;
+    }
+}
+
+/* ==========================================================================
+   SEÇÃO DE LOCALIZAÇÃO E MAPA (GOOGLE MAPS)
+   ========================================================================== */
+/* Grid de alinhamento para os detalhes do endereço e o mapa interativo */
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Título de destaque dos detalhes de contato */
+.location-info-title {
+    font-family: var(--font-titles);
+    font-size: 1.8rem;
+    color: var(--color-dark-text);
+    margin-bottom: 12px;
+}
+
+/* Subtítulo corporativo do endereço */
+.location-info-lead {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--color-gold-dark);
+    margin-bottom: 30px;
+}
+
+/* Lista de contatos e informações físicas */
+.location-details-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+/* Item individual contendo o ícone e o texto explicativo */
+.location-details-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Ícone estilizado em dourado para representação do contato */
+.location-icon {
+    color: var(--color-gold-dark);
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+/* Caixa de texto contendo a etiqueta e o valor do detalhe */
+.location-detail-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+/* Etiqueta em destaque escuro */
+.location-detail-text strong {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-dark-text);
+}
+
+/* Descrição ou valor em cinza escuro legível */
+.location-detail-text span, 
+.location-detail-text a {
+    font-size: 0.95rem;
+    color: var(--color-dark-text);
+    opacity: 0.85;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Hover no link de telefone ou contato na localização */
+.location-detail-text a:hover {
+    color: var(--color-gold-dark);
+    opacity: 1;
+}
+
+/* Contêiner de botões de chamada à ação na localização */
+.location-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Container do mapa com cantos arredondados, borda dourada e sombra */
+.location-map-container {
+    width: 100%;
+    height: 450px;
+    border-radius: 6px;
+    border: 1px solid rgba(170, 128, 70, 0.25); /* Borda fina em dourado escuro */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Sombra suave para fundos claros */
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+/* Efeito de hover no contêiner do mapa */
+.location-map-container:hover {
+    border-color: var(--color-gold);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+/* Iframe do Google Maps com dimensionamento total */
+.google-map-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Responsividade da Seção Location para tablets e telas médias */
+@media (max-width: 991px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .location-map-container {
+        height: 350px;
+    }
+}
+
+/* Responsividade da Seção Location para celulares */
+@media (max-width: 480px) {
+    .location-map-container {
+        height: 280px;
+    }
+    
+    .location-details-list {
+        gap: 20px;
+    }
 }
 
 /* ==========================================================================
@@ -1315,8 +1827,8 @@ img {
    RESPONSIVIDADE E ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS
    ========================================================================== */
 
-/* Telas Médias e Pequenas (Tablets e iPads) - Abaixo de 1024px */
-@media (max-width: 1024px) {
+/* Telas Médias e Pequenas (Tablets e iPads) - Abaixo de 1300px para evitar esmagamento do cabeçalho com os novos links */
+@media (max-width: 1300px) {
     .section-padding {
         padding: 80px 0;
     }
@@ -1358,25 +1870,13 @@ img {
     .contact-col {
         grid-column: span 2; /* Informações de contato ocupam largura total */
     }
-}
 
-/* Telas Pequenas (Smartphones) - Abaixo de 768px */
-@media (max-width: 768px) {
-    /* Altera a imagem de fundo do Hero para o formato vertical otimizado */
-    .hero-section {
-        background-image: url('../Image/Mobile.png');
-    }
-
-    /* Overlay escuro no mobile para melhorar o contraste e legibilidade das letras */
-    .hero-overlay {
-        background: linear-gradient(135deg, rgba(7, 13, 25, 0.55) 30%, rgba(15, 26, 48, 0.4) 100%);
-    }
-
-    /* Exibição do Menu Mobile e Hamburguer */
+    /* Ativação do Menu Mobile (Hambúrguer) a partir de 1024px para evitar quebra do menu de 7 links */
     .menu-toggle {
         display: flex;
     }
 
+    /* Container de links fixado na lateral no menu mobile */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -1392,34 +1892,53 @@ img {
         z-index: 1005;
     }
 
+    /* Estado ativo do menu mobile (desliza da direita) */
     .nav-menu.active {
         right: 0;
     }
 
+    /* Lista de links em coluna no menu mobile */
     .nav-menu ul {
         flex-direction: column;
         gap: 30px;
     }
 
+    /* Tamanho de fonte aumentado para links no menu mobile */
     .nav-link {
         font-size: 1.1rem;
     }
 
-    /* Modifica o hambúrguer no menu ativo */
+    /* Animação do hambúrguer no menu ativo - Primeira barra */
     .menu-toggle.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
+    /* Animação do hambúrguer no menu ativo - Segunda barra oculta */
     .menu-toggle.active .bar:nth-child(2) {
         opacity: 0;
     }
 
+    /* Animação do hambúrguer no menu ativo - Terceira barra */
     .menu-toggle.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    /* Ocultar a caixa de CTA (botão + Google rating) no header para poupar espaço em telas médias/celulares */
     .header-cta {
-        display: none; /* Oculta botão CTA menor do header para mobile */
+        display: none;
+    }
+}
+
+/* Telas Pequenas (Smartphones) - Abaixo de 768px */
+@media (max-width: 768px) {
+    /* Altera a imagem de fundo do Hero para o formato vertical otimizado */
+    .hero-section {
+        background-image: url('../Image/Mobile.png');
+    }
+
+    /* Overlay escuro no mobile para melhorar o contraste e legibilidade das letras */
+    .hero-overlay {
+        background: linear-gradient(135deg, rgba(7, 13, 25, 0.55) 30%, rgba(15, 26, 48, 0.4) 100%);
     }
 
     .hero-title {

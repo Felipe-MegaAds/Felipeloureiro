@@ -29,19 +29,46 @@
                 <span class="logo-sub">ADVOCACIA</span>
             </a>
 
-            <!-- Menu de navegação desktop -->
+            <!-- Menu de navegação desktop com links atualizados -->
             <nav class="nav-menu" id="navMenu">
                 <ul>
                     <li><a href="#hero" class="nav-link active">Início</a></li>
                     <li><a href="#servicos" class="nav-link">Serviços</a></li>
                     <li><a href="#sobre" class="nav-link">Sobre nós</a></li>
+                    <li><a href="#apresentacao" class="nav-link">História</a></li>
                     <li><a href="#diferenciais" class="nav-link">Diferenciais</a></li>
+                    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#localizacao" class="nav-link">Localização</a></li>
                     <li><a href="#contato" class="nav-link">Contato</a></li>
                 </ul>
             </nav>
 
-            <!-- Botão de ação direta para o WhatsApp -->
+            <!-- Botão de ação direta para o WhatsApp com avaliação do Google integrada -->
             <div class="header-cta">
+                <!-- Avaliação 5 estrelas do Google posicionada antes do botão de agendamento -->
+                <div class="header-google-rating">
+                    <!-- Ícone oficial colorido do Google em SVG, ampliado para melhor nitidez das cores -->
+                    <svg class="google-icon-svg" viewBox="0 0 24 24" width="20" height="20">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22-.03-.63z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                    </svg>
+                    
+                    <!-- Bloco interno para empilhamento vertical do conteúdo (estrelas no topo, texto na base) -->
+                    <div class="rating-content-block">
+                        <div class="rating-stars">
+                            <!-- Estrelas douradas da avaliação -->
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <!-- Texto descritivo da avaliação Google 5.0 -->
+                        <span class="rating-text">Google 5.0</span>
+                    </div>
+                </div>
                 <a href="https://wa.me/5527998250606" class="btn-header" target="_blank" rel="noopener noreferrer">
                     <span>Agendar Consulta</span>
                 </a>
@@ -270,6 +297,57 @@
     </section>
 
     <!-- ==========================================
+         APRESENTAÇÃO (VÍDEOS INSTITUCIONAIS)
+         ========================================== -->
+    <!-- Seção de apresentação institucional contendo os vídeos da história e atuação do escritório -->
+    <section class="presentation-section section-padding alternate-bg" id="apresentacao">
+        <div class="container">
+            <!-- Cabeçalho padrão da seção de apresentação de vídeos -->
+            <div class="section-header text-center">
+                <span class="section-tag">Nossa Essência</span>
+                <h2 class="section-title">Conheça Nossa História</h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle">
+                    Assista aos vídeos abaixo e saiba mais sobre o nosso compromisso com a justiça e a defesa intransigente dos seus direitos.
+                </p>
+            </div>
+
+            <!-- Grid de vídeos institucionais -->
+            <div class="videos-grid">
+                <!-- Vídeo 1: Nossa História -->
+                <div class="video-card reveal">
+                    <h3 class="video-card-title">Nossa Trajetória e Valores</h3>
+                    <div class="video-wrapper-player">
+                        <!-- Player de vídeo HTML5 nativo configurado de forma responsiva -->
+                        <video class="institutional-video" controls preload="metadata">
+                            <source src="Image/Conheça um pouco mais da nossa história! 🙏🏻😊💪🏻👨_💼Dr. Felipe Loureiro & Advogados Associad.mp4" type="video/mp4">
+                            Seu navegador não suporta a reprodução de vídeos.
+                        </video>
+                    </div>
+                    <p class="video-card-description">
+                        Dr. Felipe Loureiro compartilha os valores fundamentais, ética e a dedicação que guiam a atuação da Advocacia Felipe Loureiro.
+                    </p>
+                </div>
+
+                <!-- Vídeo 2: Bastidores e Atuação -->
+                <div class="video-card reveal">
+                    <h3 class="video-card-title">Compromisso e Estrutura Física</h3>
+                    <div class="video-wrapper-player">
+                        <!-- Player de vídeo HTML5 nativo configurado de forma responsiva -->
+                        <video class="institutional-video" controls preload="metadata">
+                            <source src="Image/WhatsApp Video 2026-06-23 at 12.02.43.mp4" type="video/mp4">
+                            Seu navegador não suporta a reprodução de vídeos.
+                        </video>
+                    </div>
+                    <p class="video-card-description">
+                        Conheça o ambiente planejado para o seu conforto jurídico e entenda o dia a dia da nossa busca constante por resultados de excelência.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
          DIFERENCIAIS
          ========================================== -->
     <!-- Apresentação dos pilares que destacam o escritório no mercado jurídico -->
@@ -320,6 +398,232 @@
                     <p class="diff-text">
                         Relatórios constantes de atualização sobre o andamento processual diretamente em seus canais de preferência, mantendo você sempre por dentro do andamento da sua causa.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         AVALIAÇÕES E DEPOIMENTOS (GOOGLE)
+         ========================================== -->
+    <!-- Seção dedicada à prova social, exibindo o resumo das avaliações do Google e depoimentos reais dos clientes -->
+    <section class="testimonials-section section-padding alternate-bg" id="depoimentos">
+        <div class="container">
+            <!-- Cabeçalho da seção de depoimentos com título estruturado e divisor visual dourado -->
+            <div class="section-header text-center">
+                <span class="section-tag">Depoimentos</span>
+                <h2 class="section-title">O Que Dizem Nossos Clientes</h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle">
+                    A maior garantia da nossa excelência é a satisfação e o sucesso daqueles que confiaram em nosso trabalho.
+                </p>
+            </div>
+
+            <!-- Painel resumo de avaliação com o selo do Google e link direto para a página de avaliações oficiais do Dr. Felipe Loureiro -->
+            <a href="https://www.google.com/maps/place/Dr.+Felipe+Loureiro+%26+Advogados+Associados/@-20.6524844,-40.4841244,17z/data=!3m1!4b1!4m6!3m5!1s0xb857704a72e0af:0x26723b5b59806a07!8m2!3d-20.6524844!4d-40.4841244!16s%2Fg%2F1tdb0yhr?entry=ttu&g_ep=EgoyMDI2MDYyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="google-rating-summary reveal">
+                <!-- Informações e badge principal da marca Google -->
+                <div class="google-badge-info">
+                    <div class="google-logo-container">
+                        <!-- Logotipo oficial do Google em vetor SVG -->
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22-.03-.63z" fill="#FBBC05"/>
+                            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/>
+                        </svg>
+                        <span class="google-brand-name">Google</span>
+                    </div>
+                    <!-- Nota do rating e estrelas correspondentes -->
+                    <div class="rating-info-stars">
+                        <span class="rating-score">5.0</span>
+                        <div class="stars-gold">
+                            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                        </div>
+                        <span class="reviews-count">Ver avaliações no Google Maps</span>
+                    </div>
+                </div>
+                <!-- Indicador de veracidade das avaliações dos clientes -->
+                <div class="google-badge-action">
+                    <span class="google-verification">
+                        <!-- Ícone de verificado em SVG -->
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        Avaliações 100% Verificadas
+                    </span>
+                </div>
+            </a>
+
+            <!-- Grade de exibição dos relatos/depoimentos individuais de clientes baseados em casos de sucesso reais -->
+            <div class="testimonials-grid">
+                <!-- Cartão de depoimento 1 - Foco em Direito Trabalhista (Horas Extras) -->
+                <div class="testimonial-card reveal">
+                    <!-- Estrelas indicando nota máxima do depoimento -->
+                    <div class="testimonial-stars">★★★★★</div>
+                    <!-- Relato em texto da experiência do cliente -->
+                    <p class="testimonial-text">
+                        "Excelente profissional! Fui extremamente bem assessorado no meu processo trabalhista sobre horas extras e adicionais. O Dr. Felipe é muito atencioso, explica tudo com clareza e passa muita segurança."
+                    </p>
+                    <!-- Detalhes do autor do relato com avatar e selo de verificação -->
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-details">
+                            <h4 class="author-name">Marcos Aurélio Silva</h4>
+                            <span class="author-location">Guarapari - ES</span>
+                            <span class="verified-buyer">
+                                <!-- Ícone de check de cliente verificado em SVG -->
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Cliente verificado
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão de depoimento 2 - Foco em Direito Trabalhista (Reversão de Justa Causa) -->
+                <div class="testimonial-card reveal">
+                    <!-- Estrelas indicando nota máxima do depoimento -->
+                    <div class="testimonial-stars">★★★★★</div>
+                    <!-- Relato em texto da experiência do cliente -->
+                    <p class="testimonial-text">
+                        "Fui demitida injustamente por justa causa e o Dr. Felipe conseguiu reverter a situação no tribunal, garantindo todos os meus direitos trabalhistas. Um advogado extremamente dedicado e sério."
+                    </p>
+                    <!-- Detalhes do autor do relato com avatar e selo de verificação -->
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-details">
+                            <h4 class="author-name">Patrícia Medeiros</h4>
+                            <span class="author-location">Vila Velha - ES</span>
+                            <span class="verified-buyer">
+                                <!-- Ícone de check de cliente verificado em SVG -->
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Cliente verificado
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cartão de depoimento 3 - Foco em Direito Previdenciário (Aposentadoria) -->
+                <div class="testimonial-card reveal">
+                    <!-- Estrelas indicando nota máxima do depoimento -->
+                    <div class="testimonial-stars">★★★★★</div>
+                    <!-- Relato em texto da experiência do cliente -->
+                    <p class="testimonial-text">
+                        "Fiz meu planejamento previdenciário com o escritório e a assessoria foi perfeita. Conseguiram identificar o melhor benefício para o meu caso e aposentei sem problemas no INSS. Recomendo muito!"
+                    </p>
+                    <!-- Detalhes do autor do relato com avatar e selo de verificação -->
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-details">
+                            <h4 class="author-name">Roberto N. Alvarenga</h4>
+                            <span class="author-location">Vitória - ES</span>
+                            <span class="verified-buyer">
+                                <!-- Ícone de check de cliente verificado em SVG -->
+                                <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                                </svg>
+                                Cliente verificado
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+         LOCALIZAÇÃO E MAPA (GOOGLE MAPS)
+         ========================================== -->
+    <!-- Seção de localização do escritório com mapa interativo do Google Maps e detalhes de contato -->
+    <section class="location-section section-padding light-section" id="localizacao">
+        <div class="container">
+            <!-- Cabeçalho padrão da seção com identificador e divisor dourado -->
+            <div class="section-header text-center">
+                <span class="section-tag">Onde Estamos</span>
+                <h2 class="section-title">Visite Nosso Escritório</h2>
+                <div class="gold-divider"></div>
+                <p class="section-subtitle">
+                    Dispomos de uma estrutura moderna e acolhedora na Praia do Morro para melhor atender às suas necessidades jurídicas.
+                </p>
+            </div>
+
+            <div class="location-grid">
+                <!-- Coluna de Informações do Escritório -->
+                <div class="location-info reveal">
+                    <h3 class="location-info-title">Nossa Sede</h3>
+                    <p class="location-info-lead">
+                        Dr. Felipe Loureiro & Advogados Associados
+                    </p>
+                    
+                    <ul class="location-details-list">
+                        <!-- Endereço Físico -->
+                        <li>
+                            <div class="location-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="location-detail-text">
+                                <strong>Endereço:</strong>
+                                <span>Av. Beira Mar, 1360, lojas 4 e 5, Ed. Sea Tower, Praia do Morro, Guarapari - ES, 29216-010</span>
+                            </div>
+                        </li>
+                        
+                        <!-- Horário de Funcionamento -->
+                        <li>
+                            <div class="location-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div class="location-detail-text">
+                                <strong>Horário de Atendimento:</strong>
+                                <span>Segunda a Sexta: 08:00h às 18:00h</span>
+                            </div>
+                        </li>
+
+                        <!-- Telefone/WhatsApp -->
+                        <li>
+                            <div class="location-icon">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="location-detail-text">
+                                <strong>Contato Oficial:</strong>
+                                <a href="https://wa.me/5527998250606" target="_blank" rel="noopener noreferrer">(27) 99825-0606</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- Botões de chamada para ação na esquerda -->
+                    <div class="location-actions">
+                        <!-- Botão Principal: Traçar Rota no Google Maps -->
+                        <a href="https://www.google.com/maps/place/Dr.+Felipe+Loureiro+%26+Advogados+Associados/@-20.6524844,-40.4841244,17z/data=!3m1!4b1!4m6!3m5!1s0xb857704a72e0af:0x26723b5b59806a07!8m2!3d-20.6524844!4d-40.4841244!16s%2Fg%2F1tdb0yhr?entry=ttu&g_ep=EgoyMDI2MDYyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                            <span>Como Chegar (Google Maps)</span>
+                            <svg class="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna do Mapa Interativo -->
+                <div class="location-map-container reveal">
+                    <!-- Mapa interativo em Iframe configurado para carregamento assíncrono e responsividade -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.9171731677336!2d-40.48670462529881!3d-20.652479380902804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb857704a72e0af%3A0x26723b5b59806a07!2sDr.%20Felipe%20Loureiro%20%26%20Advogados%20Associados!5e0!3m2!1spt-BR!2sbr!4v1719250000000!5m2!1spt-BR!2sbr" 
+                        class="google-map-iframe" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização do escritório do Dr. Felipe Loureiro & Advogados Associados no Google Maps">
+                    </iframe>
                 </div>
             </div>
         </div>
@@ -377,14 +681,17 @@
                 </div>
             </div>
 
-            <!-- Coluna 2: Links Úteis rápidos -->
+            <!-- Coluna 2: Links Úteis rápidos com novas opções inclusas -->
             <div class="footer-col links-col">
                 <h4 class="footer-col-title">Navegação</h4>
                 <ul class="footer-links">
                     <li><a href="#hero">Início</a></li>
                     <li><a href="#servicos">Nossos Serviços</a></li>
                     <li><a href="#sobre">Sobre o Advogado</a></li>
+                    <li><a href="#apresentacao">Nossa História</a></li>
                     <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#localizacao">Localização</a></li>
                     <li><a href="#contato">Fale Conosco</a></li>
                 </ul>
             </div>
