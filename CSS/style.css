@@ -3,25 +3,38 @@
    ========================================================================== */
 :root {
     /* Tons de Azul Escuro Corporativo */
-    --color-primary-dark: #070D19;   /* Fundo geral escuro profundo */
-    --color-secondary-dark: #0F1A30; /* Fundo de cartões e cabeçalho */
-    --color-accent-dark: #172646;    /* Elementos secundários escuros */
-    
+    --color-primary-dark: #070D19;
+    /* Fundo geral escuro profundo */
+    --color-secondary-dark: #0F1A30;
+    /* Fundo de cartões e cabeçalho */
+    --color-accent-dark: #172646;
+    /* Elementos secundários escuros */
+
     /* Tons de Dourado Luxuoso */
-    --color-gold: #D4AF37;           /* Dourado principal metálico */
-    --color-gold-light: #F3E5AB;     /* Dourado claro para destaques sutis */
-    --color-gold-sand: #C5A880;      /* Dourado fosco elegante para textos secundários */
-    --color-gold-dark: #AA8046;      /* Dourado escuro para bordas e hovers */
+    --color-gold: #D4AF37;
+    /* Dourado principal metálico */
+    --color-gold-light: #F3E5AB;
+    /* Dourado claro para destaques sutis */
+    --color-gold-sand: #C5A880;
+    /* Dourado fosco elegante para textos secundários */
+    --color-gold-dark: #AA8046;
+    /* Dourado escuro para bordas e hovers */
 
     /* Tons Neutros */
-    --color-white: #FFFFFF;          /* Branco puro */
-    --color-off-white: #F4F6F9;      /* Off-white para fundos claros alternados */
-    --color-gray-text: #A0AEC0;      /* Cinza suave para textos secundários */
-    --color-dark-text: #2D3748;      /* Cinza escuro para textos em fundos claros */
+    --color-white: #FFFFFF;
+    /* Branco puro */
+    --color-off-white: #F4F6F9;
+    /* Off-white para fundos claros alternados */
+    --color-gray-text: #A0AEC0;
+    /* Cinza suave para textos secundários */
+    --color-dark-text: #2D3748;
+    /* Cinza escuro para textos em fundos claros */
 
     /* Cores de Feedback / Terceiros */
-    --color-whatsapp: #25D366;       /* Verde WhatsApp oficial */
-    --color-whatsapp-dark: #128C7E;  /* Verde WhatsApp escuro */
+    --color-whatsapp: #25D366;
+    /* Verde WhatsApp oficial */
+    --color-whatsapp-dark: #128C7E;
+    /* Verde WhatsApp escuro */
 
     /* Fontes */
     --font-titles: 'Playfair Display', Georgia, serif;
@@ -43,7 +56,8 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px; /* Base para rem */
+    font-size: 16px;
+    /* Base para rem */
 }
 
 body {
@@ -229,20 +243,25 @@ img {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: transparent; /* Transparente no carregamento inicial */
+    background-color: transparent;
+    /* Transparente no carregamento inicial */
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-    border-bottom: 1px solid transparent; /* Sem borda no carregamento inicial */
+    border-bottom: 1px solid transparent;
+    /* Sem borda no carregamento inicial */
     transition: var(--transition-smooth);
 }
 
 /* Ajuste de altura e cor do header quando scroll acontece */
 .main-header.scrolled {
     padding: 10px 0;
-    background-color: rgba(7, 13, 25, 0.9); /* Cor sólida luxuosa com leve transparência */
-    backdrop-filter: blur(15px); /* Efeito blur sofisticado de fundo ao rolar */
+    background-color: rgba(7, 13, 25, 0.9);
+    /* Cor sólida luxuosa com leve transparência */
+    backdrop-filter: blur(15px);
+    /* Efeito blur sofisticado de fundo ao rolar */
     -webkit-backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(197, 168, 128, 0.15); /* Revela borda dourada refinada */
+    border-bottom: 1px solid rgba(197, 168, 128, 0.15);
+    /* Revela borda dourada refinada */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
@@ -250,7 +269,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1400px; /* Aumentado de 1300px para 1400px para dar mais espaço de respiração aos 8 links no desktop */
+    max-width: 1400px;
+    /* Aumentado de 1300px para 1400px para dar mais espaço de respiração aos 8 links no desktop */
     margin: 0 auto;
     padding: 20px 24px;
     transition: var(--transition-smooth);
@@ -265,21 +285,25 @@ img {
     display: flex;
     flex-direction: column;
     line-height: 1.1;
-    flex-shrink: 0; /* Garante que a identidade visual mantenha sua largura no desktop */
+    flex-shrink: 0;
+    /* Garante que a identidade visual mantenha sua largura no desktop */
 }
 
 /* Área de chamada à ação (CTA) no cabeçalho com alinhamento horizontal e flex-shrink */
 .header-cta {
     display: flex;
     align-items: center;
-    gap: 15px; /* Reduzido de 20px para 15px para economizar espaço horizontal no desktop */
-    flex-shrink: 0; /* Impede que o botão de agendamento e a nota do Google encolham ou encostem nos links */
+    gap: 15px;
+    /* Reduzido de 20px para 15px para economizar espaço horizontal no desktop */
+    flex-shrink: 0;
+    /* Impede que o botão de agendamento e a nota do Google encolham ou encostem nos links */
 }
 
 /* Avaliação de 5 estrelas do Google posicionada ao lado do botão de agendamento */
 .header-google-rating {
     display: flex;
-    align-items: center; /* Alinha o ícone do Google verticalmente ao centro do bloco de notas */
+    align-items: center;
+    /* Alinha o ícone do Google verticalmente ao centro do bloco de notas */
     gap: 8px;
     transition: var(--transition-smooth);
 }
@@ -288,7 +312,8 @@ img {
 .rating-content-block {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha estrelas e texto à esquerda */
+    align-items: flex-start;
+    /* Alinha estrelas e texto à esquerda */
     line-height: 1.2;
 }
 
@@ -334,19 +359,23 @@ img {
 .nav-menu ul {
     display: flex;
     list-style: none;
-    gap: 12px; /* Reduzido de 15px para 12px para liberar espaço horizontal */
+    gap: 12px;
+    /* Reduzido de 15px para 12px para liberar espaço horizontal */
 }
 
 /* Links do menu com tamanho de fonte compacto (0.78rem) para perfeita acomodação dos itens */
 .nav-link {
-    font-size: 0.78rem; /* Reduzido de 0.82rem para 0.78rem para dar mais folga no menu desktop */
+    font-size: 0.78rem;
+    /* Reduzido de 0.82rem para 0.78rem para dar mais folga no menu desktop */
     font-weight: 500;
     text-transform: uppercase;
-    letter-spacing: 0.2px; /* Reduzido de 0.5px para 0.2px para poupar espaço horizontal de forma legível */
+    letter-spacing: 0.2px;
+    /* Reduzido de 0.5px para 0.2px para poupar espaço horizontal de forma legível */
     color: var(--color-gray-text);
     padding: 8px 0;
     position: relative;
-    white-space: nowrap; /* Garante que os links nunca quebrem em duas linhas */
+    white-space: nowrap;
+    /* Garante que os links nunca quebrem em duas linhas */
 }
 
 .nav-link::after {
@@ -360,27 +389,32 @@ img {
     transition: var(--transition-smooth);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
     color: var(--color-gold-light);
 }
 
-.nav-link:hover::after, .nav-link.active::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
 }
 
 /* Botão de chamada para ação no cabeçalho adaptado para visual ultra compacto */
 .btn-header {
     display: inline-block;
-    padding: 8px 12px; /* Reduzido de 16px para 12px nas laterais para otimizar espaço */
+    padding: 8px 12px;
+    /* Reduzido de 16px para 12px nas laterais para otimizar espaço */
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.8px; /* Reduzido de 1px para 0.8px para economizar espaço */
+    letter-spacing: 0.8px;
+    /* Reduzido de 1px para 0.8px para economizar espaço */
     border: 1px solid var(--color-gold);
     color: var(--color-gold);
     border-radius: 3px;
     transition: var(--transition-smooth);
-    white-space: nowrap; /* Garante que 'Agendar Consulta' nunca quebre em duas linhas */
+    white-space: nowrap;
+    /* Garante que 'Agendar Consulta' nunca quebre em duas linhas */
 }
 
 .btn-header:hover {
@@ -417,10 +451,12 @@ img {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 120px; /* Evita sobreposição do header fixo */
+    padding-top: 120px;
+    /* Evita sobreposição do header fixo */
     background: url('../Image/Hero.png') no-repeat center center;
     background-size: cover;
-    background-attachment: scroll; /* Compatibilidade geral */
+    background-attachment: scroll;
+    /* Compatibilidade geral */
 }
 
 /* Efeito parallax no desktop */
@@ -481,7 +517,8 @@ img {
 
 .hero-lead {
     font-size: 1.15rem;
-    color: var(--color-white); /* Alterado para branco puro para contraste com overlay baixo */
+    color: var(--color-white);
+    /* Alterado para branco puro para contraste com overlay baixo */
     margin-bottom: 40px;
     font-weight: 300;
     max-width: 650px;
@@ -540,9 +577,19 @@ img {
 }
 
 @keyframes scrollMouse {
-    0% { transform: translate(-50%, 0); opacity: 0; }
-    30% { opacity: 1; }
-    100% { transform: translate(-50%, 12px); opacity: 0; }
+    0% {
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 12px);
+        opacity: 0;
+    }
 }
 
 /* ==========================================================================
@@ -784,7 +831,8 @@ img {
 
 .about-img {
     width: 100%;
-    height: auto; /* Exibe a imagem completa, sem cortes de altura */
+    height: auto;
+    /* Exibe a imagem completa, sem cortes de altura */
     object-fit: contain;
     border-radius: 4px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
@@ -851,28 +899,33 @@ img {
 /* Fundo e container geral para a seção de apresentação de vídeos */
 .presentation-section {
     position: relative;
-    background-color: var(--color-secondary-dark); /* Cor secundária escura corporativa */
+    background-color: var(--color-secondary-dark);
+    /* Cor secundária escura corporativa */
 }
 
 /* Grid de alinhamento para os cartões de vídeos institucionais */
 .videos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /* Garante pelo menos 450px para cada vídeo no desktop */
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    /* Garante pelo menos 450px para cada vídeo no desktop */
     gap: 40px;
     margin-top: 50px;
 }
 
 /* Card individual do vídeo contendo título, player e descrição */
 .video-card {
-    background-color: var(--color-primary-dark); /* Fundo geral escuro profundo para contraste de cinema */
+    background-color: var(--color-primary-dark);
+    /* Fundo geral escuro profundo para contraste de cinema */
     padding: 30px;
     border-radius: 6px;
-    border: 1px solid rgba(197, 168, 128, 0.08); /* Borda dourada fina */
+    border: 1px solid rgba(197, 168, 128, 0.08);
+    /* Borda dourada fina */
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
     gap: 20px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Sombra elegante */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante */
 }
 
 /* Hover com efeito de elevação no card de vídeo */
@@ -890,22 +943,23 @@ img {
     font-weight: 600;
 }
 
-/* Container do player com proporção de tela de cinema (16:9) */
+/* Container do player adaptável, cuja altura se ajustará à proporção nativa do vídeo inserido */
 .video-wrapper-player {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Proporção moderna widescreen */
     border-radius: 4px;
-    overflow: hidden; /* Oculta as bordas quadradas do player nativo */
-    border: 1px solid rgba(197, 168, 128, 0.15); /* Moldura dourada fina no player */
-    background-color: #000000; /* Fundo preto no carregamento do vídeo */
+    overflow: hidden;
+    /* Oculta as bordas quadradas do player nativo */
+    border: 1px solid rgba(197, 168, 128, 0.15);
+    /* Moldura dourada fina no player */
+    background-color: #000000;
+    /* Fundo preto no carregamento do vídeo */
     position: relative;
 }
 
-/* Vídeo institucional configurado para ocupar toda a largura e altura do wrapper */
+/* Vídeo institucional configurado para ocupar toda a largura e ajustar a altura automaticamente de acordo com sua resolução e proporção nativas */
 .institutional-video {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta o vídeo perfeitamente sem sobras pretas nas bordas */
+    height: auto; /* Permite o autoajuste de altura */
     display: block;
 }
 
@@ -920,14 +974,15 @@ img {
 /* Adaptação de layout de vídeos para dispositivos móveis (telas pequenas) */
 @media (max-width: 768px) {
     .videos-grid {
-        grid-template-columns: 1fr; /* Força empilhamento em coluna única */
+        grid-template-columns: 1fr;
+        /* Força empilhamento em coluna única */
         gap: 30px;
     }
-    
+
     .video-card {
         padding: 20px;
     }
-    
+
     .video-card-title {
         font-size: 1.2rem;
     }
@@ -992,20 +1047,24 @@ img {
 /* Fundo e container geral para a seção de depoimentos dos clientes */
 .testimonials-section {
     position: relative;
-    background-color: var(--color-secondary-dark); /* Cor secundária escura corporativa */
+    background-color: var(--color-secondary-dark);
+    /* Cor secundária escura corporativa */
 }
 
 /* Painel de destaque do Google contendo a nota média e informações de verificação */
 .google-rating-summary {
-    background-color: var(--color-primary-dark); /* Fundo geral escuro profundo */
-    border: 1px solid rgba(212, 175, 55, 0.15); /* Borda fina dourada */
+    background-color: var(--color-primary-dark);
+    /* Fundo geral escuro profundo */
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    /* Borda fina dourada */
     border-radius: 6px;
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3); /* Sombra elegante para dar profundidade */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    /* Sombra elegante para dar profundidade */
     cursor: pointer;
     transition: var(--transition-smooth);
 }
@@ -1070,7 +1129,8 @@ img {
     font-size: 0.85rem;
     color: var(--color-gray-text);
     font-weight: 300;
-    text-decoration: underline; /* Indica que é um link clicável */
+    text-decoration: underline;
+    /* Indica que é um link clicável */
 }
 
 /* Ação do badge contendo o selo de verificação */
@@ -1210,15 +1270,15 @@ img {
     .google-badge-info {
         gap: 15px;
     }
-    
+
     .rating-info-stars {
         gap: 10px;
     }
-    
+
     .rating-score {
         font-size: 1.8rem;
     }
-    
+
     .testimonial-card {
         padding: 30px 24px;
     }
@@ -1289,7 +1349,7 @@ img {
 }
 
 /* Descrição ou valor em cinza escuro legível */
-.location-detail-text span, 
+.location-detail-text span,
 .location-detail-text a {
     font-size: 0.95rem;
     color: var(--color-dark-text);
@@ -1316,8 +1376,10 @@ img {
     width: 100%;
     height: 450px;
     border-radius: 6px;
-    border: 1px solid rgba(170, 128, 70, 0.25); /* Borda fina em dourado escuro */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); /* Sombra suave para fundos claros */
+    border: 1px solid rgba(170, 128, 70, 0.25);
+    /* Borda fina em dourado escuro */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    /* Sombra suave para fundos claros */
     overflow: hidden;
     position: relative;
     transition: var(--transition-smooth);
@@ -1343,7 +1405,7 @@ img {
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .location-map-container {
         height: 350px;
     }
@@ -1354,7 +1416,7 @@ img {
     .location-map-container {
         height: 280px;
     }
-    
+
     .location-details-list {
         gap: 20px;
     }
@@ -1377,7 +1439,7 @@ img {
     width: 100%;
     height: 100%;
     background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.04) 0%, transparent 60%),
-                radial-gradient(circle at 10% 80%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
+        radial-gradient(circle at 10% 80%, rgba(212, 175, 55, 0.04) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -1611,8 +1673,15 @@ img {
 }
 
 @keyframes whatsappPulse {
-    0% { transform: scale(1); opacity: 0.4; }
-    100% { transform: scale(1.6); opacity: 0; }
+    0% {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: scale(1.6);
+        opacity: 0;
+    }
 }
 
 /* Mini Balão de Conversa (Tooltip WhatsApp) */
@@ -1632,7 +1701,8 @@ img {
     visibility: hidden;
     transform: translateY(15px);
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    pointer-events: none; /* Evita que atrapalhe o clique antes de ser exibido */
+    pointer-events: none;
+    /* Evita que atrapalhe o clique antes de ser exibido */
 }
 
 /* Ativação do tooltip no Hover do container flutuante */
@@ -1655,7 +1725,8 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%; /* Máscara circular perfeita */
+    border-radius: 50%;
+    /* Máscara circular perfeita */
     border: 2px solid var(--color-gold);
 }
 
@@ -1717,7 +1788,7 @@ img {
     opacity: 0;
     transform: translateY(35px);
     transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
-                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .reveal.active {
@@ -1732,10 +1803,21 @@ img {
     animation: fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.hero-subtitle.fade-in { animation-delay: 0.2s; }
-.hero-title.fade-in { animation-delay: 0.4s; }
-.hero-lead.fade-in { animation-delay: 0.6s; }
-.hero-actions.fade-in { animation-delay: 0.8s; }
+.hero-subtitle.fade-in {
+    animation-delay: 0.2s;
+}
+
+.hero-title.fade-in {
+    animation-delay: 0.4s;
+}
+
+.hero-lead.fade-in {
+    animation-delay: 0.6s;
+}
+
+.hero-actions.fade-in {
+    animation-delay: 0.8s;
+}
 
 @keyframes fadeInUp {
     to {
@@ -1850,11 +1932,13 @@ img {
     }
 
     .about-image-col {
-        order: -1; /* Foto aparece primeiro no mobile */
+        order: -1;
+        /* Foto aparece primeiro no mobile */
     }
 
     .about-img {
-        height: auto; /* Mantém a imagem completa em telas menores */
+        height: auto;
+        /* Mantém a imagem completa em telas menores */
     }
 
     .previdenciario-bonus-box {
@@ -1866,7 +1950,8 @@ img {
     }
 
     .bonus-icon-bg {
-        display: none; /* Oculta ícone decorativo para poupar espaço */
+        display: none;
+        /* Oculta ícone decorativo para poupar espaço */
     }
 
     .footer-top {
@@ -1875,7 +1960,8 @@ img {
     }
 
     .contact-col {
-        grid-column: span 2; /* Informações de contato ocupam largura total */
+        grid-column: span 2;
+        /* Informações de contato ocupam largura total */
     }
 
     /* Ativação do Menu Mobile (Hambúrguer) a partir de 1024px para evitar quebra do menu de 7 links */
@@ -1895,7 +1981,7 @@ img {
         border-left: 1px solid rgba(197, 168, 128, 0.2);
         padding: 100px 40px 40px 40px;
         transition: var(--transition-smooth);
-        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
         z-index: 1005;
     }
 
@@ -1938,6 +2024,7 @@ img {
 
 /* Telas Pequenas (Smartphones) - Abaixo de 768px */
 @media (max-width: 768px) {
+
     /* Altera a imagem de fundo do Hero para o formato vertical otimizado */
     .hero-section {
         background-image: url('../Image/Mobile.png');
@@ -2009,7 +2096,8 @@ img {
     }
 
     .whatsapp-tooltip {
-        display: none; /* Desativa tooltip no mobile para evitar sobreposições incômodas na tela */
+        display: none;
+        /* Desativa tooltip no mobile para evitar sobreposições incômodas na tela */
     }
 
     .whatsapp-floating-container {
