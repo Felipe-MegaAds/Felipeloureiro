@@ -54,6 +54,11 @@ body {
     overflow-x: hidden;
 }
 
+/* Regra global para justificar os textos dos parágrafos, promovendo um alinhamento elegante e legibilidade do conteúdo textual da página */
+p {
+    text-align: justify;
+}
+
 /* Containers responsivos */
 .container {
     width: 100%;
@@ -120,12 +125,14 @@ img {
     text-align: center;
 }
 
+/* Subtítulo de seções com alinhamento centralizado para preservar a simetria com os cabeçalhos das seções da página */
 .section-subtitle {
     font-size: 1.05rem;
     color: var(--color-gray-text);
     max-width: 700px;
     margin: 0 auto;
     font-weight: 300;
+    text-align: center;
 }
 
 /* Divisor Dourado Elegante */
