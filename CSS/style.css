@@ -234,6 +234,17 @@ img {
     transform: translateX(4px);
 }
 
+/* Bloco de CTA de WhatsApp adicionado ao final das seções que ainda não possuíam botão próprio */
+.section-cta {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Mantém o alinhamento à esquerda do botão de WhatsApp na coluna de texto da seção Sobre */
+.about-text-col .section-cta {
+    text-align: left;
+}
+
 /* ==========================================================================
    HEADER FIXO (COM GLASSMORPHISM)
    ========================================================================== */
@@ -2109,4 +2120,19 @@ img {
         width: 50px;
         height: 50px;
     }
+}
+
+/* ==========================================================================
+   OTIMIZAÇÃO PARA METRIFICAÇÃO DO GOOGLE ADS / GTM
+   ========================================================================== */
+
+/* 
+   Esta regra impede que os elementos internos (filhos) de qualquer botão com 
+   a classe ".elementor-button" interceptem os cliques do mouse.
+   Isso garante que o clique seja registrado diretamente no link principal (tag <a>), 
+   permitindo que o Google Tag Manager (GTM) capture a classe ".elementor-button" 
+   corretamente e contabilize os cliques para as campanhas de tráfego.
+*/
+.elementor-button * {
+    pointer-events: none;
 }
